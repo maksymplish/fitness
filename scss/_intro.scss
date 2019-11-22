@@ -1,0 +1,30 @@
+.ba-intro {
+  color: #fff;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+
+  &__text {
+    text-transform: uppercase;
+    padding: 11px 13px;
+    max-width: 148px;
+
+    background-color: $primary-color;
+    margin-bottom: 2px;
+  }
+
+  &__title {
+    padding: 19px 22px;
+    max-width: 400px;
+    background-color: $secondary-color;
+    margin-bottom: 2px;
+  }
+
+  &__subtitle {
+    text-transform: uppercase;
+    font-size: 19px;
+    padding: 14px 24px;
+    max-width: 261px;
+    background-color: $secondary-color;
+  }
+}

@@ -1,0 +1,76 @@
+.ba-pricing-title {
+  margin-bottom: 70px;
+
+  &:after {
+    background-color: #fff;
+  }
+
+  &--color {
+    color: #fff;
+  }
+}
+
+.ba-pricing-box {
+  background-color: $primary-color-dark;
+  max-width: 370px;
+  max-height: 175px;
+  margin: 0 auto;
+  padding: 27px 0;
+  color: #fff;
+  display: flex;
+  align-items: center;
+
+  &__description {
+    ul {
+      padding-left: 15px;
+      list-style-image: url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAoAAAAICAYAAADA+m62AAAAf0lEQVQoU4WPwRGCUAxE31YApVCCViJ0oJUoFWgnUgJ2ohWsE+bnj3CQvWSSvMluxB/ZboEnMGoHfAAn4CXbHdBJimGV7YQ+y972G2iAIWHbZ+AKBHSQNAfYA/dyaig1+6OkKWZLxg2c9tWhggVOu2gvkm6/mVdflweQFHFW+gKBvjFQM+6hyQAAAABJRU5ErkJggg==");
+    }
+  }
+
+  & + & {
+    margin-top: 30px;
+
+    @media screen and (min-width: $medium) {
+      margin: 0 auto 30px;
+    }
+  }
+
+  &:hover {
+    background-color: $primary-color-dark;
+    border: 2px solid #ffffff;
+  }
+
+  &__price {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-right: 61px;
+    position: relative;
+    h5 {
+      margin: 20px 0;
+    }
+
+    &--border {
+      border-right: 1px solid $primary-color;
+      padding-right: 29px;
+      margin-right: 29px;
+
+      &:hover {
+        border-right: 2px solid #fff;
+      }
+    }
+
+    span {
+      font-size: 36px;
+      font-weight: 700;
+      line-height: 1;
+
+      sup {
+        font-size: 14px;
+        top: 0;
+        vertical-align: top;
+        line-height: 1.6;
+      }
+    }
+  }
+}

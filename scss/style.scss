@@ -1,0 +1,145 @@
+@import url("https://fonts.googleapis.com/css?family=Open+Sans:300,400|Oswald:400,700&display=swap");
+
+$primary-color: #e25050;
+$primary-color-dark: #bd4141;
+$secondary-color: #202020;
+$text-color: #777777;
+
+$body-font-family: "Oswald", sans-serif;
+$text-font-family: "Open Sans", sans-serif;
+
+$medium: 640px;
+$large: 1024px;
+
+@import "normalize";
+@import "layout";
+@import "elements";
+@import "intro";
+
+body {
+  font: 400 13px/1.75 $body-font-family;
+  background: #ffffff;
+  color: $secondary-color;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+/* Layout */
+.ba-container {
+  padding-left: 15px;
+  padding-right: 15px;
+  max-width: 1200px;
+}
+
+a {
+  color: $primary-color;
+  text-decoration: none;
+
+  &:hover {
+    color: $secondary-color;
+  }
+}
+p {
+  line-height: 1;
+  margin: 0;
+  padding: 0;
+  text-align: center;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin: 0;
+  line-height: 1;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+h1 {
+  font-size: 31px;
+}
+h2 {
+  font-size: 31px;
+}
+h3 {
+  font-size: 15px;
+}
+
+h5 {
+  font-size: 19px;
+}
+
+h6 {
+  font-size: 14px;
+  color: #fff;
+  margin-bottom: 30px;
+}
+
+.ba-section {
+  &--intro {
+    background: url(../img/bg.jpg) no-repeat 63% 50%;
+    background-size: cover;
+    padding: 217px 0 217px 12px;
+    margin-top: 99px;
+
+    @media screen and (min-width: $large) {
+      height: 100vh;
+      background: url(../img/bg.jpg) no-repeat 50%;
+      background-size: cover;
+    }
+  }
+
+  &--features {
+    padding: 60px 0 70px;
+  }
+
+  &--ourteam {
+    padding: 59px 0;
+    background: $secondary-color url(../img/bg-ourteam.png);
+  }
+
+  &--gallery {
+    padding: 59px 0;
+  }
+
+  &--pricing {
+    padding: 60px 0 30px;
+    background-color: $primary-color;
+  }
+
+  &--partners {
+    padding: 60px 0 68px;
+  }
+  &--contact {
+    padding: 35px 0 40px;
+    background-color: $secondary-color;
+  }
+
+  &__title {
+    font-size: 25px;
+    line-height: 21px;
+    text-align: center;
+    position: relative;
+
+    &:after {
+      content: "";
+      height: 1px;
+      width: 45px;
+      background: $secondary-color;
+      position: absolute;
+      bottom: -9px;
+      left: calc(50% - 22.5px);
+    }
+  }
+}
+
+@import "header";
+@import "features";
+@import "ourteam";
+@import "gallery";
+@import "pricing";
+@import "partners";
+@import "contact";

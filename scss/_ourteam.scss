@@ -1,0 +1,44 @@
+.ba-ourteam-title {
+	margin-bottom: 70px;
+
+  &:after {
+	  background-color: #fff;
+  }
+	  
+  &--color {
+	color: #fff;
+	}
+}
+
+.ba-ourteam-box {
+	& + & {
+		margin-top: 20px;
+
+		@media screen and (min-width:$medium){
+			margin: 0 auto 20px;
+		}
+	}
+}
+
+.ba-ourteam {
+	background-color: #fff;
+	max-width: 270px;
+	display: flex;
+	flex-direction: column;
+	align-items: flex-start;
+	margin: 0 auto;
+
+	&__img {
+		display: block;
+		margin-bottom: 22px;
+	}
+	&__name {
+		margin-bottom: 6px;
+		margin-left: 20px;
+	}
+	p {
+		color: #afafaf;
+		margin-bottom: 22px;
+		margin-left: 20px;
+	}
+}

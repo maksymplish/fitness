@@ -1,0 +1,37 @@
+.ba-partners-title {
+	margin-bottom: 40px;
+	@media screen and (min-width:$medium){
+		margin-bottom: 60px;
+	}
+
+
+}
+
+.ba-icon-links {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	margin: 0 48px;
+
+	a+a {
+		margin-top: 10px;
+	}
+
+	@media screen and (min-width:$medium){
+		flex-direction: row;
+		flex-wrap: wrap;
+		justify-content: center;
+
+		a+a {
+			margin-left: 15px;
+		}
+	}
+
+	@media screen and (min-width:$large){
+		flex-direction: row;
+		flex-wrap: wrap;
+		justify-content: space-between;
+		align-items: center;
+
+	}
+}

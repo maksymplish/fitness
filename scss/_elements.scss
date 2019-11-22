@@ -1,0 +1,89 @@
+/* Typography */
+a,
+input[type="submit"],
+input[type="button"],
+button {
+  transition: color 0.3s ease-in, border-color 0.3s ease-in,
+    background-color 0.3s ease-in, opacity 0.3s ease-in;
+}
+input[type="submit"],
+input[type="button"],
+button,
+.ba-button {
+  display: inline-block;
+  font-family: $body-font-family;
+  font-size: 14px;
+  background: $primary-color;
+  text-decoration: none;
+  color: #fff;
+  min-height: 37px;
+  line-height: 37px;
+  min-width: 140px;
+  text-align: center;
+  padding: 0 26px;
+  position: relative;
+
+  &:hover {
+    background: $primary-color-dark;
+    color: #fff;
+  }
+}
+.ba-button {
+  &--form {
+    min-width: 212px;
+    text-transform: uppercase;
+    outline: none;
+    border: none;
+    position: relative;
+    text-align: left;
+
+    &:after {
+      content: "";
+      width: 7px;
+      height: 13px;
+      background: url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAcAAAANCAYAAABlyXS1AAAAkElEQVQoU4WQYQ3CMBSEv1MwJMwBOGAoYA5gToYTnIADZgEHQ8GRt3RNaULWX03ve727J9s9cJY0UB3ZfgJH4CZpLPUQd0AAe2CQdF8BxcV2C0xAUwKLmIBD+sHASdKUxQJ4AfMC1Alth+cFeP+b/ABd7fkA4q3LnilteEWtXGftGROR9rfn1oZit72ka538C3prQEU44JpXAAAAAElFTkSuQmCC")
+        no-repeat 50%;
+      position: absolute;
+      right: 22px;
+      top: calc(50% - 6px);
+    }
+  }
+
+  &--tell {
+    position: absolute;
+    bottom: -37px;
+    right: 0;
+
+    @media screen and (max-width: $large - 1px) {
+      position: relative;
+      margin-left: 40px;
+    }
+
+    &:before {
+      content: "";
+      width: 37px;
+      height: 37px;
+      background: #bd4141
+        url('data:image/svg+xml,\
+			 <svg xmlns="http://www.w3.org/2000/svg" width="15px" height="14px">\
+		  <path fill="rgb(255, 255, 255)"\
+			d="M1.920,0.517 C2.480,-0.044 4.173,-0.137 4.186,0.159 C4.199,0.456 5.711,3.743 5.724,4.040 C5.737,4.336 4.727,5.346 4.431,5.642 C4.139,5.935 6.408,8.500 6.451,8.549 C6.499,8.592 9.063,10.862 9.356,10.569 C9.652,10.273 10.662,9.263 10.958,9.276 C11.254,9.289 14.540,10.802 14.836,10.815 C15.132,10.828 15.039,12.521 14.479,13.082 C14.000,13.561 11.519,15.300 7.206,12.194 C6.733,11.922 5.984,11.297 4.848,10.162 C4.847,10.161 4.846,10.160 4.846,10.160 C4.845,10.159 4.844,10.158 4.843,10.157 C4.842,10.156 4.841,10.155 4.840,10.154 C4.840,10.154 4.839,10.153 4.838,10.152 C3.703,9.016 3.079,8.266 2.807,7.793 C-0.298,3.478 1.441,0.996 1.920,0.517 Z"/>
+		  </svg>')
+        50% no-repeat;
+      position: absolute;
+      top: 0;
+      left: -37px;
+    }
+  }
+}
+
+input[type="text"],
+input[type="email"],
+input[type="password"],
+input[type="number"],
+input[type="tel"],
+textarea,
+select {
+  transition: color 0.3s ease-in, border-color 0.3s ease-in,
+    background-color 0.3s ease-in, opacity 0.3s ease-in;
+}
